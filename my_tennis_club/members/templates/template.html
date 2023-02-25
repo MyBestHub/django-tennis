@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="{% static 'myglobal.css' %}">
+<body>
+
+<table border='4'>
+  <tr>
+    <th>ID</th>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>experience_in_months</th>
+  </tr>
+  {% for x in mymembers %}
+    <tr>
+      <td>{{ x.id }}</td>
+      <td>{{ x.firstname }}</td>
+      <td>{{ x.lastname }}</td>
+      <td> {{x.experience_in_months}} </td>
+    </tr>
+  {% endfor %}
+</table>
+
+{% for x in mymembers  %}
+
+    <h2>Testing id: {{ x.id }}</h2>   
+
+    <p> {{ x.firstname }} {{ x.lastname }}</p>
+{% endfor %}
+
+{% comment "this was the original welcome message", large comment in Django %}
+    <h1> Test</h1>
+    <h1> Welcome {# you can also use the # for smaller comments for Django #}</h1>
+{% endcomment %}
+
+<p> You can see the Testing.</p>
+
+
+
+</body>
+</html>
