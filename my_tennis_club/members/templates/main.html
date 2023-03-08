@@ -1,15 +1,102 @@
-{% extends "master.html" %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{% static 'myfirst.css' %}">
 
-{% block title %}
-  My Tennis Club
-{% endblock %}
+  <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+  <div class="topnav">
+    <a href="/">HOME</a> |
+    <a href="/members">MEMBERS</a>|
+    <a href="/ranking/">RANKS</a>
+    <div class="navbar-nav ml-auto">
+    <a href="/login_page/">LOGIN</a> | 
+    <a href="/register/">REGISTER</a> 
 
+    </div>
+
+  </div>
 {% block content %}
-  <div class="main">
-    <h1>My Tennis Club</h1>
+<div class="main">
+    <h1>Tennis Club</h1>
 
     <h3>Members</h3>
   
     <p>Check out all our <a href="members/">members</a></p>
+</div>
+
+<div class="my_photo">
+  <img src="https://media.licdn.com/dms/image/D5603AQFgujZJYbI44g/profile-displayphoto-shrink_800_800/0/1676841010606?e=1683763200&v=beta&t=D_BK3cnEWusXU6Cs8aq5ONcKtGasBpCJV-iaxNMd3Qo" alt="Image 1" class="image1">
+  <h4>
+    I present myself, Hussein Dabs,<br> a software developer 
+    and owner of this tennis club.    
+  </h4>
+    
+  <div>
+    <p>This sport club is made for software developers, <br>
+       looking to have fun playing tennis! 
+    </p>
   </div>
+</div>
+<div class="my_photo">
+  <h2>My Programming Skills</h2>
+  <ul>
+    <li>
+      <img src="https://cdn.svgporn.com/logos/python.svg" alt="Python Logo" >
+      Python
+    </li>
+    <li>
+      <img src="https://cdn.svgporn.com/logos/django.svg" alt="Django Logo" >
+      Django
+    </li>
+    <li>
+      <img src="https://cdn.svgporn.com/logos/postgresql.svg" alt="PostgreSQL Logo">
+      PostgreSQL
+    </li>
+    <li>
+      <img src="https://cdn.svgporn.com/logos/html-5.svg" alt="HTML5 Logo">
+      HTML5
+    </li>
+    <li>
+      <img src="https://cdn.svgporn.com/logos/css-3.svg" alt="CSS3 Logo">
+      CSS3
+    </li>  
+    <li>
+      <img src="https://cdn.svgporn.com/logos/bootstrap.svg" alt="Bootstrap Logo">
+      Bootstrap
+    </li>
+    <li>
+      <img src="https://cdn.svgporn.com/logos/aws.svg" alt="AWS Logo">
+      AWS
+    </li>
+    <li>
+      <img src="https://cdn.svgporn.com/logos/git.svg" alt="Git Logo">
+      Git
+    </li>
+    <li>
+      <img src="https://cdn.svgporn.com/logos/github.svg" alt="GitHub Logo">
+      GitHub
+    </li>
+    
+  </ul>
+</div>
+<br><br><br><br><br><br><br><br>
+
+
+<h3> <u>Contact Info</u> </h3>
+<div class="my-div">
+  <p>
+      <p>LinkedIn:  <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile">https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile</a> </p>
+      <p>GitHub:  <a href="https://github.com/MyBestHub/django-tennis.git">https://github.com/MyBestHub/django-tennis.git</a> </p>
+      <a>Email: hussein_deaibes1@hotmail.com</a>
+  </p>       
+</div>
+
+
+
+
+
+
 {% endblock %}

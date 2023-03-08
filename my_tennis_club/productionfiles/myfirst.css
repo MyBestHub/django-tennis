@@ -1,4 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
 body {
-    background-color: rgb(208, 226, 232);
-    font-family: verdana;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #0f1017;
+  background:  url(https://cdn.discordapp.com/attachments/976997386436104202/1081228367224909884/Chef_Maze_Background_with_a_tennis_design_light_blue_color_no_w_8c0f3cb0-5add-429b-b2c3-7cfd1fcd0008.png);
+  background-size: cover;
+  
 }
+
+/* Add a semi-transparent overlay to make text easier to read */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  opacity: 0.8
+}
+.topnav {
+  background-color:#375BDC;
+  color:#ffffff;
+  padding:10px;
+  
+}
+.topnav a:link, .topnav a:visited {
+  text-decoration: none;
+  color: #ffffff; 
+}
+.topnav a:hover, .topnav a:active {
+  text-decoration: underline;
+}
+
+/* Add some text over the background */
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #050303;
+  font-size: 48px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(92, 22, 22, 0.5);
+}
+
+img {
+  width: 20px;
+  height: 20px;
+  margin-right: 25px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+thead {
+  background-color: #e0e0e0;
+}
+
+thead th {
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #1a237e;
+}
+
+tbody td {
+  padding: 15px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+tbody tr:hover {
+  background-color: #e0e0e0;
+  transition: all 0.2s ease-in-out;
+}
+
+th:first-child,
+td:first-child {
+  border-left: 3px solid #e0e0e0;
+}
+
+th:last-child,
+td:last-child {
+  border-right: 3px solid #e0e0e0;
+}
+
+th,
+td {
+  border-top: 3px solid #e0e0e0;
+  border-bottom: 3px solid #e0e0e0;
+}
+
+th {
+  background-color: #1a237e;
+  color: #fff;
+}
+
+.image1 {
+  width: 240px;
+  height: 220px;
+  margin-right: 30px;
+}
+
+.main {
+  text-align: center;
+  padding-left: 20px;
+}
+
+.my_photo {
+  text-align: center;
+  color: #050303;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+li {
+  text-align: center;
+  color: #201111fc;
+  font-weight: bold;
+  font-family: "Times New Roman", serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  
+  list-style-type: disc;
+}
+
+my-div {
+  padding: 20px;
+  color: #050303;
+  font-size: 48px;
+  font-weight: bold;
+  padding-right: 5%;
+}
+

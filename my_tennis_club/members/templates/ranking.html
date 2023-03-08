@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{% static 'myfirst.css' %}">
+  <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+
+  <div class="topnav">
+    <a href="/">HOME</a> |
+    <a href="/members">MEMBERS</a>|
+    <div class="navbar-nav ml-auto">
+    <a href="/login_page/">LOGIN</a>  
+    <a href="/register/"> REGISTER</a>
+
+    </div>
+
+  </div>
+
+{% block content %}
+<table border='4'>
+    <tr>  
+      <th>Ranking List</th>   
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Total Points</th>
+    </tr>
+    {% for x in mymembers %}
+      <tr> 
+        <td> {{x.ranking_system}} </td>      
+        <td>{{ x.firstname}}</td>
+        <td>{{ x.lastname }}</td>
+        <td> {{x.total_scores}} </td>
+        
+      </tr>
+    {% endfor %}
+</table>
+
+
+
+{% endblock %}
+
+</body>
+</html> 

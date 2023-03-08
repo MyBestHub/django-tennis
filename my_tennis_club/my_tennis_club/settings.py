@@ -78,12 +78,8 @@ WSGI_APPLICATION = 'my_tennis_club.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'PostgresData',
-        'PASSWORD': 'hussein4444',
-        'HOST': 'django-data-project.chfrhrdv8h5e.us-east-2.rds.amazonaws.com',
-        'PORT': '5432'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
@@ -134,3 +130,7 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+LOGIN_REDIRECT_URL = '/'
+LOGIN_URL = 'login'
+
+#added from dev.to
