@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'members',
-    'bootstrap5'
+    'bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'my_tennis_club.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': 'postgres',
     }
 }
 
@@ -130,7 +130,6 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-LOGIN_REDIRECT_URL = '/'
-LOGIN_URL = 'login'
+
 
 #added from dev.to
